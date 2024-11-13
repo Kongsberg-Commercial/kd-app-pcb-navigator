@@ -1,0 +1,1 @@
+Remember for check this testpoint before starting manual test

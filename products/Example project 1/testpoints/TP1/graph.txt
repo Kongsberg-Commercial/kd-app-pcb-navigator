@@ -1,0 +1,1 @@
+Waveform should look like this during startup
