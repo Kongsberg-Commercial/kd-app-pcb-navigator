@@ -406,6 +406,8 @@ class FreeCADtest:
           self.model['components'][refdes] = (obj, layer)
 
       placebound = placebounds.getObject('PlaceBound%s'%layer)
+      if placebound == None:
+        continue
       for feaure_name in placebound.getSubObjects():
         obj = placebound.getObject(feaure_name.strip('.'))
         refdes = obj.Label[obj.Label.index('_')+1:]
